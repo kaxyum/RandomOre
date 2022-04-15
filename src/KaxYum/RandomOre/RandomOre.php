@@ -31,31 +31,31 @@ class RandomOre extends PluginBase implements Listener {
         $num = rand(0,100); 
         if($num >= 0 && $num <= 20){
           $event->setDrops([
-            ItemFactory::getInstance()->get($this->cfg->get("1Drops"), 0, 1)
+            ItemFactory::getInstance()->get($this->cfg->get("1Drops"), 0, $this->cfg->get("1Meta"))
           ]);
           $player->sendTip($this->cfg->get("1Message"));
         }
         if($num >= 20 && $num <= 40){
             $event->setDrops([
-                ItemFactory::getInstance()->get($this->cfg->get("2Drops"), 0, 1)
+                ItemFactory::getInstance()->get($this->cfg->get("2Drops"), 0, $this->cfg->get("2Meta"))
             ]);
             $player->sendTip($this->cfg->get("2Message"));
         }
         if($num >= 40 && $num <= 60){
             $event->setDrops([
-              ItemFactory::getInstance()->get($this->cfg->get("3Drops"), 0, 1)
+              ItemFactory::getInstance()->get($this->cfg->get("3Drops"), 0, $this->cfg->get("3Meta"))
             ]);
             $player->sendTip($this->cfg->get("3Message"));
         }
         if($num >= 60 && $num <= 80){
             $event->setDrops([
-              ItemFactory::getInstance()->get($this->cfg->get("4Drops"), 0, 1)
+              ItemFactory::getInstance()->get($this->cfg->get("4Drops"), 0, $this->cfg->get("4Meta"))
             ]);
             $player->sendTip($this->cfg->get("4Message"));
         }
         if($num >= 80 && $num <= 100){
             $event->setDrops([
-              ItemFactory::getInstance()->get($this->cfg->get("5Drops"), 0, 1)
+              ItemFactory::getInstance()->get($this->cfg->get("5Drops"), 0, $this->cfg->get("5Meta"))
             ]);
             $player->sendTip($this->cfg->get("5Message"));
         }
