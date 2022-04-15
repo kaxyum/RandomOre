@@ -5,4 +5,5 @@ branches:
 projects:
   RandomOre:
     path: ""
+    icon: icon.png
 ...
