@@ -1,6 +1,6 @@
 <?php
 
-namespace RandomOre;
+namespace KaxYum\RandomOre;
 
 use pocketmine\player\Player;
 use pocketmine\Server;
